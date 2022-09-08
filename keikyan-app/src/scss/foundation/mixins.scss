@@ -1,0 +1,92 @@
+@mixin container {
+    width: $container-width;
+    margin: auto;
+    @include sp {
+        width: 100%;
+    }
+  }
+  
+  @mixin pcmiddle {
+    @media screen and (min-width: 366px) and (max-width: $pc-middle-width) {
+      @content;
+    }
+  }
+  
+  @mixin pcall {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin pc {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin sp {
+    @media screen and (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @mixin spxs {
+    @media screen and (max-width: 376px) {
+      @content;
+    }
+  }
+  
+  @mixin content-title {
+      margin-bottom: .8rem;
+      font-size: .24rem;
+      font-weight: 500;
+      letter-spacing: 1.92px;
+      line-height: .42rem;
+      text-align: center;
+  }
+  @mixin sp-content-title {
+      margin-bottom: .5rem;
+      font-size: .2rem;
+      font-weight: 500;
+      letter-spacing: 1.6px;
+      line-height: .32rem;
+      text-align: center;
+  }
+  @mixin sp-interval {
+    padding-left: (17px / $sp-artboard-size) * 100%;
+    padding-right: (17px / $sp-artboard-size) * 100%;
+  }
+  
+  @mixin media-retina {
+      @media screen and (-webkit-min-device-pixel-ratio:2),
+      (min-resolution: 2dppx){
+          @content;
+      }
+  }
+  
+  @mixin font-face(
+    $font-family,
+    $file-path,
+    $font-weight: normal,
+    $font-style: normal
+  ) {
+    @font-face {
+      font-family: $font-family;
+      src: url("#{$file-path}.eot");
+      src: url("#{$file-path}.eot?#iefix") format("embedded-opentype"),
+        url("#{$file-path}.woff2") format("woff2"),
+        url("#{$file-path}.woff") format("woff"),
+        url("#{$file-path}.ttf") format("truetype"),
+        url("#{$file-path}.svg##{$font-family}") format("svg");
+      font-weight: $font-weight;
+      font-style: $font-style;
+    }
+  
+    // Chrome for Windows rendering fix: http://www.adtrak.co.uk/blog/font-face-chrome-rendering/
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      @font-face {
+        font-family: $font-family;
+        src: url("#{$file-path}.svg##{$font-family}") format("svg");
+      }
+    }
+  }

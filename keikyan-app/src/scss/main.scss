@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+/*foundation---------------------------------*/
+@import "./foundation/reset.scss";
+// @import "./foundation/variables.scss";
+@import "./foundation/mixins.scss";
+@import "./foundation/base.scss";
+
+@import "./App.scss"

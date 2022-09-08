@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Work+Sans:wght@400;700&display=swap");
+.container {
+  font-family: 'Work Sans', 'Noto Sans JP', sans-serif;
+  color: #222;
+  margin: 0 auto;
+  max-width: 1106px;
+}
+
+.l-title {
+  max-width: 1366px;
+  padding-top: 156px;
+}
+
+.l-title .p-title {
+  font-weight: bold;
+  font-size: 183px;
+  letter-spacing: 0.05em;
+  text-align: left;
+  margin-left: 70px;
+}
+
+.l-title .p-title__sub {
+  font-weight: bold;
+  margin-left: 85px;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  line-height: 75px;
+  text-align: left;
+}
+
+.l-title .p-title__icon {
+  width: 174px;
+  position: absolute;
+  top: 250px;
+  left: 565px;
+}
+
+.l-price {
+  max-width: 1106px;
+  padding: 120px 130px;
+}
+
+.l-price .p-price__title {
+  font-size: 40px;
+  text-align: center;
+}
+
+.l-price .p-price__desc--title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #F5EFE9;
+  margin-top: 58px;
+}
+
+.l-price .p-price__desc--num {
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 54px;
+  text-align: center;
+  width: 162px;
+  background-color: #225441;
+  color: white;
+  border-bottom-right-radius: 20px;
+}
+
+.l-price .p-price__desc--heading {
+  padding: 19px 0 0 94px;
+  font-size: 22px;
+  width: calc(100% - 162px);
+}
+
+.l-price .p-price__calendar .react-datepicker {
+  border: none;
+  width: 100%;
+}
+
+.l-price .p-price__calendar .react-datepicker__month-container {
+  width: 50%;
+}
+
+.l-price .p-price__calendar .react-datepicker__month-container:nth-child(2) {
+  padding-right: 16px;
+}
+
+.l-price .p-price__calendar .react-datepicker__month-container:nth-child(3) {
+  padding-left: 16px;
+}
+
+.l-price .p-price__calendar .react-datepicker__header--custom {
+  border-bottom: none;
+  background-color: white;
+}
+
+.l-price .p-price__calendar .react-datepicker .button-prev {
+  color: #333333;
+  font-size: 16px;
+}
+
+.l-price .p-price__calendar .react-datepicker .button-next {
+  color: #333333;
+  font-size: 16px;
+}
+
+.l-price .p-price__calendar .react-datepicker__current-year {
+  margin: 0 61px;
+  font-size: 24px;
+}
+
+.l-price .p-price__calendar .react-datepicker__current-months {
+  text-align: left;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  padding: 32px 56px 0;
+  border-right: 1px solid #D5D5D5;
+  border-left: 1px solid #D5D5D5;
+  border-top: 1px solid #D5D5D5;
+}
+
+.l-price .p-price__calendar .react-datepicker__current-month {
+  text-align: left;
+  font-size: 31px;
+}
+
+.l-price .p-price__calendar .react-datepicker__day {
+  padding: 9px 5px;
+}
+
+.l-price .p-price__calendar .react-datepicker__day-names {
+  padding: 37px 56px 0;
+  border-right: 1px solid #D5D5D5;
+  border-left: 1px solid #D5D5D5;
+}
+
+.l-price .p-price__calendar .react-datepicker__day-name, .l-price .p-price__calendar .react-datepicker .react-datepicker__day {
+  width: calc(100% / 7);
+  margin: 0;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.l-price .p-price__calendar .react-datepicker__day--in-selecting-range {
+  background-color: rgba(34, 84, 65, 0.5);
+}
+
+.l-price .p-price__calendar .react-datepicker__day--in-range, .l-price .p-price__calendar .react-datepicker__day--keyboard-selected {
+  background-color: #225441;
+}
+
+.l-price .p-price__calendar .react-datepicker__month {
+  margin: 0;
+  border-right: 1px solid #D5D5D5;
+  border-left: 1px solid #D5D5D5;
+  border-bottom: 1px solid #D5D5D5;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 310px;
+}
+
+.l-price .p-price__calendar .react-datepicker__week {
+  padding: 0 56px;
+}
+
+.l-price .p-price__car--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+}
+
+.l-price .p-price__car--item {
+  width: 33.3%;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.l-price .p-price__car--img {
+  height: 153px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.l-price .p-price__car--name {
+  font-size: 17px;
+  padding-top: 18px;
+}
+
+.l-price .p-price__option--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 40px;
+}
+
+.l-price .p-price__option--list label {
+  border: 1px solid #D5D5D5;
+  border-radius: 10px;
+  padding: 10px 0;
+  margin: 10px;
+  font-size: 18px;
+}
+
+.l-price .p-price__option--list label:hover, .l-price .p-price__option--list label:focus, .l-price .p-price__option--list label:active {
+  background-color: rgba(34, 84, 65, 0.5);
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.l-price .p-price__option--list label:focus, .l-price .p-price__option--list label:checked, .l-price .p-price__option--list label:active {
+  background-color: #225441;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.l-price .p-price__option--item {
+  width: 25%;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.l-price .p-price__option--term {
+  font-size: 12px;
+  padding-top: 23px;
+}
+
+.l-price .p-price__option--term a {
+  text-decoration: underline;
+}
+
+.l-price .p-price__option--term a:hover, .l-price .p-price__option--term a:focus, .l-price .p-price__option--term a:active {
+  text-decoration: underline !important;
+  color: inherit !important;
+}
+
+.l-price .p-price__calc {
+  padding-top: 63px;
+}
+
+.l-price .p-price__calc button {
+  width: 500px;
+  background-color: #EAEAEA;
+  color: rgba(34, 34, 34, 0.2);
+  font-size: 28px;
+  border-radius: 40px;
+  padding: 27px 0;
+}
+
+.l-price .p-price__calc button:hover, .l-price .p-price__calc button:focus, .l-price .p-price__calc button:active {
+  background-color: rgba(34, 84, 65, 0.5);
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.l-price .p-price__calc button:focus, .l-price .p-price__calc button:active {
+  background-color: #225441;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.l-price .p-price__calc-result {
+  margin-top: 100px;
+  -webkit-box-shadow: 0 0 4px gray;
+  box-shadow: 0 0 4px gray;
+  border-radius: 20px;
+  text-align: center;
+  padding: 61px 0;
+}
+
+.l-price .p-price__calc-result--title {
+  font-size: 40px;
+}
+
+.l-price .p-price__calc-result--price {
+  width: 80%;
+  margin: 0 auto;
+  background: #F5EFE9;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.l-price .p-price__calc-result--breakdown {
+  padding-top: 29px;
+  margin-bottom: 38px;
+  font-size: 24px;
+}
+
+.l-price .p-price__calc-result--list {
+  width: 312px;
+  margin: 0 auto;
+}
+
+.l-price .p-price__calc-result--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px dotted #707070;
+}
+
+.l-price .p-price__calc-reserv {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 40px;
+  -webkit-box-shadow: 0 0 4px gray;
+  box-shadow: 0 0 4px gray;
+  border-radius: 40px;
+}
+
+.l-price .p-price__calc-reserv a {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 40px;
+  font-size: 35px;
+  color: #225441;
+}
+
+.l-price .p-price__calc-reserv a:hover, .l-price .p-price__calc-reserv a:focus, .l-price .p-price__calc-reserv a:active {
+  background-color: rgba(34, 84, 65, 0.5);
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.l-price .p-price__calc-reserv a:focus, .l-price .p-price__calc-reserv a:active {
+  background-color: #225441;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.l-price .p-price__calc-reserv a:focus span, .l-price .p-price__calc-reserv a:active span {
+  background-color: white;
+  color: #225441;
+}
+
+.l-price .p-price__calc-reserv a span {
+  position: absolute;
+  right: 4%;
+  top: 15%;
+  background-color: #225441;
+  color: white;
+  padding: 16px;
+  font-size: 23px;
+  border-radius: 50%;
+}
+
+.text-center {
+  text-align: center;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+button {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+  outline: none !important;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+a:hover {
+  color: #fff;
+  text-decoration: none !important;
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: none transparent;
+  vertical-align: middle;
+  font-size: inherit;
+  color: inherit;
+  box-sizing: content-box;
+  outline: none;
+}
+
+input[type='checkbox'i] {
+  position: absolute;
+  opacity: 0;
+}
+
+html {
+  // font-size: 1vw;
+  font-size: 62.5%;
+
+  &.scroll-prevent {
+    /*動き固定*/
+    position: fixed;
+    /*奥行きを管理*/
+    z-index: -1;
+    /*下2つで背景を元のサイズのまま表示することができる*/
+    width: 100%;
+    height: 100%;
+  }
+}
+
+body {
+  font-weight: 400;
+  font-family: 'Poppins', 'Noto Sans JP', sans-serif;
+  line-height: 1;
+  // font-size: 0.1rem;
+  color: #343b40;
+
+  &.is-modal-open {
+    overflow-y: hidden;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+// IE11ではセレクトボックスの矢印を非表示
+select::-ms-expand {
+  display: none;
+}
