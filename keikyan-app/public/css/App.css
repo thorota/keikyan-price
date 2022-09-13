@@ -1,12 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Work+Sans:wght@400;700&display=swap");
 .container {
+  margin: auto;
+  position: relative;
   font-family: 'Work Sans', 'Noto Sans JP', sans-serif;
   color: #222;
   margin: 0 auto;
   max-width: 1106px;
 }
 
+.bg-wave {
+  position: absolute;
+  top: 0;
+  z-index: -5;
+}
+
 .l-title {
+  position: relative;
   max-width: 1366px;
   padding-top: 156px;
 }
@@ -36,6 +45,7 @@
 }
 
 .l-price {
+  position: relative;
   max-width: 1106px;
   padding: 120px 130px;
 }
@@ -49,7 +59,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #F5EFE9;
+  background-color: #f5efe9;
   margin-top: 58px;
 }
 
@@ -73,6 +83,7 @@
 .l-price .p-price__calendar .react-datepicker {
   border: none;
   width: 100%;
+  margin-top: 25px;
 }
 
 .l-price .p-price__calendar .react-datepicker__month-container {
@@ -112,9 +123,9 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   padding: 32px 56px 0;
-  border-right: 1px solid #D5D5D5;
-  border-left: 1px solid #D5D5D5;
-  border-top: 1px solid #D5D5D5;
+  border-right: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
+  border-top: 1px solid #d5d5d5;
 }
 
 .l-price .p-price__calendar .react-datepicker__current-month {
@@ -128,11 +139,12 @@
 
 .l-price .p-price__calendar .react-datepicker__day-names {
   padding: 37px 56px 0;
-  border-right: 1px solid #D5D5D5;
-  border-left: 1px solid #D5D5D5;
+  border-right: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
 }
 
-.l-price .p-price__calendar .react-datepicker__day-name, .l-price .p-price__calendar .react-datepicker .react-datepicker__day {
+.l-price .p-price__calendar .react-datepicker__day-name,
+.l-price .p-price__calendar .react-datepicker .react-datepicker__day {
   width: calc(100% / 7);
   margin: 0;
   font-size: 21px;
@@ -149,9 +161,9 @@
 
 .l-price .p-price__calendar .react-datepicker__month {
   margin: 0;
-  border-right: 1px solid #D5D5D5;
-  border-left: 1px solid #D5D5D5;
-  border-bottom: 1px solid #D5D5D5;
+  border-right: 1px solid #d5d5d5;
+  border-left: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   height: 310px;
@@ -174,6 +186,20 @@
   text-align: center;
 }
 
+.l-price .p-price__car--item button:hover p, .l-price .p-price__car--item button:focus p, .l-price .p-price__car--item button:active p {
+  background-color: rgba(34, 84, 65, 0.5);
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.l-price .p-price__car--item button:focus p, .l-price .p-price__car--item button:active p {
+  background-color: #225441;
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 .l-price .p-price__car--img {
   height: 153px;
   -o-object-fit: cover;
@@ -183,7 +209,7 @@
 
 .l-price .p-price__car--name {
   font-size: 17px;
-  padding-top: 18px;
+  margin-top: 18px;
 }
 
 .l-price .p-price__option--list {
@@ -199,30 +225,39 @@
 }
 
 .l-price .p-price__option--list label {
-  border: 1px solid #D5D5D5;
+  position: relative;
+}
+
+.l-price .p-price__option--list label p {
+  border: 1px solid #d5d5d5;
   border-radius: 10px;
-  padding: 10px 0;
+  padding: 10px;
   margin: 10px;
   font-size: 18px;
 }
 
-.l-price .p-price__option--list label:hover, .l-price .p-price__option--list label:focus, .l-price .p-price__option--list label:active {
+.l-price .p-price__option--list label p:hover, .l-price .p-price__option--list label p:focus, .l-price .p-price__option--list label p:active {
   background-color: rgba(34, 84, 65, 0.5);
   color: white;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
-.l-price .p-price__option--list label:focus, .l-price .p-price__option--list label:checked, .l-price .p-price__option--list label:active {
+.l-price .p-price__option--list label input[type='checkbox' i],
+.l-price .p-price__option--list label input[type='radio' i] {
+  display: none;
+}
+
+.l-price .p-price__option--list label input[type='checkbox' i]:checked + p,
+.l-price .p-price__option--list label input[type='radio' i]:checked + p {
   background-color: #225441;
   color: white;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .l-price .p-price__option--item {
   width: 25%;
-  padding: 0 25px;
   text-align: center;
 }
 
@@ -245,26 +280,18 @@
 }
 
 .l-price .p-price__calc button {
-  width: 500px;
-  background-color: #EAEAEA;
-  color: rgba(34, 34, 34, 0.2);
+  width: 100%;
+  max-width: 500px;
   font-size: 28px;
+  background-color: #225441;
+  color: white;
   border-radius: 40px;
   padding: 27px 0;
 }
 
-.l-price .p-price__calc button:hover, .l-price .p-price__calc button:focus, .l-price .p-price__calc button:active {
-  background-color: rgba(34, 84, 65, 0.5);
+.l-price .p-price__calc button:disabled {
+  background-color: #eaeaea;
   color: white;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.l-price .p-price__calc button:focus, .l-price .p-price__calc button:active {
-  background-color: #225441;
-  color: white;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
 .l-price .p-price__calc-result {
@@ -278,14 +305,16 @@
 
 .l-price .p-price__calc-result--title {
   font-size: 40px;
+  margin-bottom: 38px;
 }
 
 .l-price .p-price__calc-result--price {
   width: 80%;
   margin: 0 auto;
-  background: #F5EFE9;
+  background: #f5efe9;
   font-size: 70px;
   font-weight: bold;
+  padding: 16px 0;
 }
 
 .l-price .p-price__calc-result--breakdown {
@@ -295,7 +324,7 @@
 }
 
 .l-price .p-price__calc-result--list {
-  width: 312px;
+  max-width: 312px;
   margin: 0 auto;
 }
 
@@ -362,5 +391,137 @@
 
 .text-center {
   text-align: center;
+}
+
+.text-md {
+  font-size: 16px !important;
+}
+
+.text-sm {
+  font-size: 14px !important;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+  }
+  .l-title {
+    padding-top: 120px;
+  }
+  .l-title .p-title {
+    font-size: 73px;
+    margin-left: 30px;
+  }
+  .l-title .p-title__sub {
+    font-size: 17px;
+    margin-left: 30px;
+  }
+  .l-title .p-title__icon {
+    width: 94px;
+    top: 152px;
+    left: 218px;
+  }
+  .l-price {
+    padding: 63px 30px;
+  }
+  .l-price .p-price__title {
+    font-size: 24px;
+  }
+  .l-price .p-price__desc--title {
+    margin-top: 60px;
+  }
+  .l-price .p-price__desc--num {
+    width: 84px;
+    font-size: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .l-price .p-price__desc--heading {
+    padding: 19px 47px 19px 33px;
+    font-size: 20px;
+    width: calc(100%);
+    text-align: center;
+  }
+  .l-price .p-price__calendar .react-datepicker__month-container {
+    width: 100%;
+  }
+  .l-price .p-price__calendar .react-datepicker__month-container:nth-child(2) {
+    padding: 0;
+  }
+  .l-price .p-price__calendar .react-datepicker__month-container:nth-child(3) {
+    padding: 0;
+    display: none;
+  }
+  .l-price .p-price__calendar .react-datepicker__current-months {
+    padding: 32px 20px 0px;
+  }
+  .l-price .p-price__calendar .react-datepicker__day-names {
+    padding: 37px 15px 0;
+  }
+  .l-price .p-price__calendar .react-datepicker__week {
+    padding: 0 15px;
+  }
+  .l-price .p-price__car--list {
+    overflow: scroll;
+    overflow-y: hidden;
+    width: 100%;
+  }
+  .l-price .p-price__car--item {
+    min-width: 50%;
+    padding: 0 10px;
+  }
+  .l-price .p-price__car--img {
+    height: 117px;
+    padding: 0 10px;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+  .l-price .p-price__car--name {
+    font-size: 16px;
+  }
+  .l-price .p-price__option--list label p {
+    margin: 5px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .l-price .p-price__option--item {
+    width: 50%;
+  }
+  .l-price .p-price__calc button {
+    width: 100%;
+  }
+  .l-price .p-price__calc-result--title {
+    font-size: 24px;
+  }
+  .l-price .p-price__calc-result--price {
+    font-size: 50px;
+  }
+  .l-price .p-price__calc-result--list {
+    width: 80%;
+  }
+  .l-price .p-price__calc-reserv a {
+    color: white;
+    background-color: #225441;
+    font-size: 22px;
+  }
+  .l-price .p-price__calc-reserv a span {
+    padding: 0;
+    top: 30%;
+  }
 }
 /*# sourceMappingURL=App.css.map */

@@ -1,5 +1,5 @@
 @mixin container {
-    width: $container-width;
+    // width: $container-width;
     margin: auto;
     @include sp {
         width: 100%;
