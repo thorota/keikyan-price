@@ -16,6 +16,36 @@
   z-index: -5;
 }
 
+.only-sp {
+  @include pc{
+    display: none;
+  }
+  @include sp {
+    display: block;
+  }
+}
+
+.sp-menu {
+  position: fixed;
+  width: 120px;
+  right: 15px;
+  z-index: 99;
+  text-align: center;
+  background-color: rgba(34, 84, 65, 1);
+  color: white;
+  bottom: 20px;
+  padding: 19px;
+  border-radius: 20px;
+  a{
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+.small {
+  font-size: 12px;
+}
+
 .l-title {
   position: relative;
   max-width: 1366px;

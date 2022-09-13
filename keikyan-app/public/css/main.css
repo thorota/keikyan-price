@@ -334,6 +334,28 @@ select::-ms-expand {
   z-index: -5;
 }
 
+.sp-menu {
+  position: fixed;
+  width: 120px;
+  right: 15px;
+  z-index: 99;
+  text-align: center;
+  background-color: #225441;
+  color: white;
+  bottom: 20px;
+  padding: 19px;
+  border-radius: 20px;
+}
+
+.sp-menu a {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.small {
+  font-size: 12px;
+}
+
 .l-title {
   position: relative;
   max-width: 1366px;
@@ -725,6 +747,9 @@ select::-ms-expand {
   .container {
     width: 100%;
   }
+  .only-sp {
+    display: block;
+  }
   .l-title {
     padding-top: 120px;
   }
@@ -842,6 +867,12 @@ select::-ms-expand {
   .l-price .p-price__calc-reserv a span {
     padding: 0;
     top: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .only-sp {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

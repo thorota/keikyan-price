@@ -233,6 +233,12 @@ const App = () => {
       {/* <section>
         <img className="bg-wave" src="/img/bg-wave-white.png" />
       </section> */}
+      <section className='sp-menu only-sp'>
+        <a href='https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/'>
+          <p className='title'>RESERVE</p>
+          <p className='small'>予約する</p>
+        </a>
+      </section>
       <div className="container">
         <header className="header"></header>
         <section className="l-title">
