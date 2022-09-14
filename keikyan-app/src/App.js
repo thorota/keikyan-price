@@ -251,7 +251,7 @@ const App = () => {
           <div>
             <form>
               <div className="p-price__desc">
-                <div className="p-price__desc--title">
+                <div className="p-price__desc--title m-3">
                   <p className="p-price__desc--num">01</p>
                   <p className="p-price__desc--heading">
                     利用する日程を選択してください

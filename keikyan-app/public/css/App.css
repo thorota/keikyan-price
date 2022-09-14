@@ -458,6 +458,7 @@
   .l-title .p-title__sub {
     font-size: 17px;
     margin-left: 30px;
+    line-height: 30px;
   }
   .l-title .p-title__icon {
     width: 94px;
@@ -472,6 +473,9 @@
   }
   .l-price .p-price__desc--title {
     margin-top: 60px;
+  }
+  .l-price .p-price__desc--title.m-3 {
+    margin-top: 20px !important;
   }
   .l-price .p-price__desc--num {
     width: 84px;
