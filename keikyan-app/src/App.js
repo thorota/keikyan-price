@@ -339,7 +339,7 @@ const App = () => {
                   </p>
                 </div>
                 <div className="p-price__car--list">
-                  <div className="p-price__car--item">
+                  {/* <div className="p-price__car--item">
                     <div>
                       <img
                         className="p-price__car--img coming-soon"
@@ -347,7 +347,7 @@ const App = () => {
                       ></img>
                       <p className="p-price__car--name">coming soon</p>
                     </div>
-                  </div>
+                  </div> */}
                   <div className="p-price__car--item">
                     <button type="button">
                       <img
@@ -358,7 +358,7 @@ const App = () => {
                       <img className="p-price__car--checked" src='/img/checked.png' />
                     </button>
                   </div>
-                  <div className="p-price__car--item">
+                  {/* <div className="p-price__car--item">
                     <div>
                       <img
                         className="p-price__car--img coming-soon"
@@ -366,7 +366,7 @@ const App = () => {
                       ></img>
                       <p className="p-price__car--name">coming soon</p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div>

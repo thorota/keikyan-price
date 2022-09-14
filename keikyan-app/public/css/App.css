@@ -210,6 +210,9 @@
   display: -ms-flexbox;
   display: flex;
   padding-top: 40px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .l-price .p-price__car--item {

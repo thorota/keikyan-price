@@ -257,6 +257,7 @@
       &--list {
         display: flex;
         padding-top: 40px;
+        justify-content: center;
         @include sp {
           overflow: scroll;
           overflow-y: hidden;
