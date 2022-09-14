@@ -338,6 +338,8 @@ select::-ms-expand {
   position: absolute;
   bottom: 0;
   z-index: -5;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
 }
 
 .sp-menu {
