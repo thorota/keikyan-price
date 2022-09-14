@@ -334,6 +334,12 @@ select::-ms-expand {
   z-index: -5;
 }
 
+.bg-wave-down {
+  position: absolute;
+  bottom: 0;
+  z-index: -5;
+}
+
 .sp-menu {
   position: fixed;
   width: 120px;
@@ -528,30 +534,32 @@ select::-ms-expand {
   text-align: center;
 }
 
-.l-price .p-price__car--item button:hover p, .l-price .p-price__car--item button:focus p, .l-price .p-price__car--item button:active p {
-  background-color: rgba(34, 84, 65, 0.5);
-  color: white;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+.l-price .p-price__car--item button {
+  position: relative;
 }
 
-.l-price .p-price__car--item button:focus p, .l-price .p-price__car--item button:active p {
-  background-color: #225441;
-  color: white;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+.l-price .p-price__car--item button:focus .p-price__car--checked, .l-price .p-price__car--item button:active .p-price__car--checked {
+  display: block;
+  position: absolute;
+  right: -25px;
+  top: 0;
+  width: 37px;
 }
 
 .l-price .p-price__car--img {
   height: 153px;
-  -o-object-fit: cover;
-  object-fit: cover;
+  -o-object-fit: contain;
+  object-fit: contain;
   margin: 0 auto;
 }
 
 .l-price .p-price__car--name {
   font-size: 17px;
   margin-top: 18px;
+}
+
+.l-price .p-price__car--checked {
+  display: none;
 }
 
 .l-price .p-price__option--list {
@@ -576,6 +584,7 @@ select::-ms-expand {
   padding: 10px;
   margin: 10px;
   font-size: 18px;
+  background-color: white;
 }
 
 .l-price .p-price__option--list label p:hover, .l-price .p-price__option--list label p:focus, .l-price .p-price__option--list label p:active {
@@ -643,6 +652,7 @@ select::-ms-expand {
   border-radius: 20px;
   text-align: center;
   padding: 61px 0;
+  background-color: white;
 }
 
 .l-price .p-price__calc-result--title {

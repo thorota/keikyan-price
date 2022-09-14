@@ -230,9 +230,9 @@ const App = () => {
 
   return (
     <>
-      {/* <section>
-        <img className="bg-wave" src="/img/bg-wave-white.png" />
-      </section> */}
+      <section>
+        <img className="bg-wave" src="/img/bg-wave.png" />
+      </section>
       <section className='sp-menu only-sp'>
         <a href='https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/'>
           <p className='title'>RESERVE</p>
@@ -355,6 +355,7 @@ const App = () => {
                         src="/img/suzuki-every.png"
                       ></img>
                       <p className="p-price__car--name">スズキエブリィバン4w</p>
+                      <img className="p-price__car--checked" src='/img/checked.png' />
                     </button>
                   </div>
                   <div className="p-price__car--item">
@@ -485,7 +486,7 @@ const App = () => {
                   </p>
                 </div>
               </div>
-              <div className="p-price__calc-reserv">
+              {/* <div className="p-price__calc-reserv">
                 <a
                   href="https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/"
                   target="blank"
@@ -493,10 +494,13 @@ const App = () => {
                   この内容で予約する
                   <span>→</span>
                 </a>
-              </div>
+              </div> */}
             </form>
           </div>
         </section>
+      <section>
+        <img className="bg-wave-down" src="/img/bg-wave-down.png" />
+      </section>
       </div>
     </>
   );
