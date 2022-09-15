@@ -230,17 +230,81 @@ const App = () => {
 
   return (
     <>
+      <header className="only-pc">
+        <div className="pc-header">
+          <div className="header__logo">
+            <img src="/img/logo-black.png" />
+          </div>
+          <div className="header__list">
+            <div className="header__item">
+              <span className="text-sm">キャンピングカー</span>
+            </div>
+            <div className="header__item">
+              <span>料金</span>
+            </div>
+            <div className="header__item">
+              <span>ご利用案内</span>
+            </div>
+            <div className="header__item">
+              <span>お知らせ</span>
+            </div>
+            <div className="header__item">
+              <span className="text-sm">料金シミュレーション</span>
+            </div>
+            <div className="header__item">
+              <span>軽キャンおすすめ</span>
+            </div>
+            <div className="header__item header__line">
+              <img src="/img/line.png" />
+            </div>
+          </div>
+          <div className="header__item header__reserve">
+            <p>RESERVE</p>
+            <p className="small">予約する</p>
+          </div>
+        </div>
+      </header>
+      <header className="only-sp">
+        <div className="sp-header">
+          <div className="header__logo">
+            <img src="/img/logo-sp.png" />
+          </div>
+          <div class="header__menu">
+            <input type="checkbox" id="menu-btn-check" />
+            <label htmlFor="menu-btn-check" className="menu-btn">
+              <span></span>
+            </label>
+            <div className="menu-content">
+              <ul>
+                  <li><a href="/">ホーム</a></li>
+                  <li><a href="/lineup">キャンピングカー</a></li>
+                  <li><a href="/price">料金</a></li>
+                  <li><a href="/topic">トピックス</a></li>
+                  <li><a href="/plan">軽キャンのおすすめ　ー</a></li>
+                  <li><a href="/plan">ー　おすすめリモートワークコース</a></li>
+                  <li><a href="/plan">ー　おすすめ親子キャンプコース</a></li>
+                  <li><a href="/plan">ー　おすすめ関東他のRVコース</a></li>
+                  <li><a href="https://cerulean-jalebi-6515e8.netlify.app/">料金シュミレーション</a></li>
+                  <li><a href="/contact">お問い合わせ</a></li>
+                  <li className='sp-sns'><a href="https://instagram.com/keyaki.works?igshid=YmMyMTA2M2Y="><img src='/img/instagram-sp.png'/></a></li>
+                  <li className=''><a href="https://page.line.me/378kjmwj"><img src='/img/line-sp.png'/></a></li>
+                  <li className=''><a href="https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/"><img src='/img/reserv-sp.png'/></a></li>
+              </ul>
+              <p className='copy-right'>Copyright ©︎keikyan. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </header>
       <section>
         <img className="bg-wave" src="/img/bg-wave.png" />
       </section>
-      <section className='sp-menu only-sp'>
-        <a href='https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/'>
-          <p className='title'>RESERVE</p>
-          <p className='small'>予約する</p>
+      <section className="sp-menu only-sp">
+        <a href="https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/">
+          <p className="title">RESERVE</p>
+          <p className="small">予約する</p>
         </a>
       </section>
       <div className="container">
-        <header className="header"></header>
         <section className="l-title">
           <h1 className="p-title">PRICE</h1>
           <h5 className="p-title__sub">料金シミュレーション</h5>
@@ -355,7 +419,10 @@ const App = () => {
                         src="/img/suzuki-every.png"
                       ></img>
                       <p className="p-price__car--name">スズキエブリィバン4w</p>
-                      <img className="p-price__car--checked" src='/img/checked.png' />
+                      <img
+                        className="p-price__car--checked"
+                        src="/img/checked.png"
+                      />
                     </button>
                   </div>
                   {/* <div className="p-price__car--item">
@@ -498,9 +565,9 @@ const App = () => {
             </form>
           </div>
         </section>
-      <section>
-        <img className="bg-wave-down" src="/img/bg-wave-down.png" />
-      </section>
+        <section>
+          <img className="bg-wave-down" src="/img/bg-wave-down.png" />
+        </section>
       </div>
     </>
   );

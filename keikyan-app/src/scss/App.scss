@@ -1,6 +1,156 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
 @import "./foundation/mixins.scss";
 
+header{
+  .pc-header{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: fixed;
+    background-color: white;
+    z-index: 99999;
+    width: 100%;
+    .header{
+      &__list{
+        width: calc(100% - 170px - 14vw);
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      &__item{
+        text-align: center;
+        span,p {
+          font-size: 1.4vw
+        }
+      }
+      &__logo{
+        // width: 170px;
+      }
+      &__line{
+        width: 170px
+      }
+      &__reserve{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 14vw;
+        height: 100px;
+        right: 0;
+        background-color: rgba(34, 84, 65, 1);
+        border-bottom-left-radius: 20px;
+        padding: 2vw 3vw;
+        color: white;
+        
+      }
+    }
+  }
+
+  .sp-header {
+    .header__logo{
+      width: 102px;
+    }
+    .menu-btn {
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      display: flex;
+      height: 70px;
+      width: 70px;
+      justify-content: center;
+      align-items: center;
+      z-index: 110;
+      background-color: #225441;
+      border-bottom-left-radius: 30px;
+    }
+    .menu-btn span{
+      color: white;
+      font-size: 35px;
+      letter-spacing: -1.4em;
+    }
+    .menu-btn span:before {
+      content: '・・・';
+    }
+    .menu-btn span:after {
+    }
+    #menu-btn-check {
+      display: none;
+    }
+    #menu-btn-check:checked ~ .menu-btn span {
+      background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+    }
+    #menu-btn-check:checked ~ .menu-btn span::before {
+        bottom: 40px;
+        content: '';
+        display: block;
+        height: 3px;
+        width: 30px;
+        right: 15px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        transform: rotate(45deg);
+    }
+    #menu-btn-check:checked ~ .menu-btn span::after {
+        top: 28px;
+        content: '';
+        display: block;
+        height: 3px;
+        width: 30px;
+        right: 15px;
+        border-radius: 3px;
+        background-color: #ffffff;
+        position: absolute;
+        transform: rotate(-45deg);
+    }
+    #menu-btn-check:checked ~ .menu-content {
+      left: 0;/*メニューを画面内へ*/
+    }
+    .menu-content {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 100%;
+      z-index: 100;
+      background-color: #222222;
+      transition: all 0.3s;
+      ul {
+        padding: 10vh 10px 0;
+        margin-left: 10vw;
+        .sp-sns{
+          margin-top: 4vw;
+        }
+        a {
+          display: block;
+          font-size: 18px;
+          box-sizing: border-box;
+          color:#ffffff;
+          text-decoration: none;
+          padding: 1vh 2vw 2vh 0;
+          position: relative;
+          img {
+            width: 170px
+          }
+        }
+      }
+      .copy-right{
+        -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        color: white;
+        position: absolute;
+        right: 2vw;
+        white-space: nowrap;
+        bottom: 7vh;
+        font-size: 11px;
+      }
+    }
+
+  }
+}
+
 .container {
   @include container;
   position: relative;
@@ -23,12 +173,21 @@
   }
 }
 
-.only-sp {
+.only-pc {
   @include pc{
-    display: none;
+    display: block!important;
   }
   @include sp {
-    display: block;
+    display: none!important;
+  }
+}
+
+.only-sp {
+  @include pc{
+    display: none!important;
+  }
+  @include sp {
+    display: block!important;
   }
 }
 
@@ -270,7 +429,7 @@
         }
       }
       &--item {
-        width: 33.3%;
+        width: 100%;
         padding: 0 25px;
         text-align: center;
         @include sp {
@@ -281,8 +440,6 @@
         }
         button {
           position: relative;
-          &:focus,
-          &:active {
             .p-price__car--checked{
               display: block;
               position: absolute;
@@ -290,6 +447,15 @@
               top: 0;
               width: 37px;
             }
+          &:focus,
+          &:active {
+            // .p-price__car--checked{
+            //   display: block;
+            //   position: absolute;
+            //   right: -25px;
+            //   top: 0;
+            //   width: 37px;
+            // }
           }
           @include sp{
             &:hover{
