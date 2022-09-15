@@ -13,8 +13,8 @@ header{
     justify-content: space-between;
     .header{
       &__list{
-        width: calc(100% - 170px - 14vw);
-        padding: 0 220px 0 0;
+        width: calc(100% - 14vw);
+        padding: 0 15vw 0 0;
         max-width: 1250px;
         display: flex;
         justify-content: space-between;
