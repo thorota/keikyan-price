@@ -233,33 +233,35 @@ const App = () => {
       <header className="only-pc">
         <div className="pc-header">
           <div className="header__logo">
-            <img src="/img/logo-black.png" />
+            <a href='https://keyaki-keikyan.com/'>
+              <img src="/img/logo-black.png" />
+            </a>
           </div>
           <div className="header__list">
             <div className="header__item">
-              <a><span className="text-sm">キャンピングカー</span></a>
+              <a href='https://keyaki-keikyan.com/lineup'><span className="text-sm">キャンピングカー</span></a>
             </div>
             <div className="header__item">
-              <a><span>料金</span></a>
+              <a href='https://keyaki-keikyan.com/price'><span>料金</span></a>
             </div>
             <div className="header__item">
-              <a><span>ご利用案内</span></a>
+              <a href='https://keyaki-keikyan.com/guide'><span>ご利用案内</span></a>
             </div>
             <div className="header__item">
-              <a><span>お知らせ</span></a>
+              <a href='https://keyaki-keikyan.com/topic'><span>お知らせ</span></a>
             </div>
             <div className="header__item">
-              <a><span className="text-sm">料金シミュレーション</span></a>
+              <a href='/'><span className="text-sm">料金シミュレーション</span></a>
             </div>
             <div className="header__item">
-              <a><span>軽キャンおすすめ</span></a>
+              <a href='https://keyaki-keikyan.com/plan'><span>軽キャンおすすめ</span></a>
             </div>
             <div className="header__item header__line">
-              <a><img src="/img/line.png" /></a>
+              <a href='https://page.line.me/378kjmwj' target="_blank"><img src="/img/line.png" /></a>
             </div>
           </div>
           <div className="header__item header__reserve">
-            <a>
+            <a href='https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/' target="_blank">
             <p className='title'>RESERVE</p>
             <p className="small">予約する</p>
             </a>
@@ -278,19 +280,19 @@ const App = () => {
             </label>
             <div className="menu-content">
               <ul>
-                  <li><a href="/">ホーム</a></li>
-                  <li><a href="/lineup">キャンピングカー</a></li>
-                  <li><a href="/price">料金</a></li>
-                  <li><a href="/topic">トピックス</a></li>
-                  <li><a href="/plan">軽キャンのおすすめ　ー</a></li>
-                  <li><a href="/plan">ー　おすすめリモートワークコース</a></li>
-                  <li><a href="/plan">ー　おすすめ親子キャンプコース</a></li>
-                  <li><a href="/plan">ー　おすすめ関東他のRVコース</a></li>
+                  <li><a href="https://keyaki-keikyan.com/">ホーム</a></li>
+                  <li><a href="https://keyaki-keikyan.com/lineup">キャンピングカー</a></li>
+                  <li><a href="https://keyaki-keikyan.com/price">料金</a></li>
+                  <li><a href="https://keyaki-keikyan.com/topic">トピックス</a></li>
+                  <li><a href="https://keyaki-keikyan.com/plan">軽キャンのおすすめ　ー</a></li>
+                  <li><a href="https://keyaki-keikyan.com/plan">ー　おすすめリモートワークコース</a></li>
+                  <li><a href="https://keyaki-keikyan.com/plan">ー　おすすめ親子キャンプコース</a></li>
+                  <li><a href="https://keyaki-keikyan.com/plan">ー　おすすめ関東他のRVコース</a></li>
                   <li><a href="https://cerulean-jalebi-6515e8.netlify.app/">料金シュミレーション</a></li>
-                  <li><a href="/contact">お問い合わせ</a></li>
-                  <li className='sp-sns'><a href="https://instagram.com/keyaki.works?igshid=YmMyMTA2M2Y="><img src='/img/instagram-sp.png'/></a></li>
-                  <li className=''><a href="https://page.line.me/378kjmwj"><img src='/img/line-sp.png'/></a></li>
-                  <li className=''><a href="https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/"><img src='/img/reserv-sp.png'/></a></li>
+                  <li><a href="https://keyaki-keikyan.com/contact">お問い合わせ</a></li>
+                  <li className='sp-sns'><a href="https://instagram.com/keyaki.works?igshid=YmMyMTA2M2Y=" target="_blank"><img src='/img/instagram-sp.png'/></a></li>
+                  <li className=''><a href="https://page.line.me/378kjmwj" target="_blank"><img src='/img/line-sp.png'/></a></li>
+                  <li className=''><a href="https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/" target="_blank"><img src='/img/reserv-sp.png'/></a></li>
               </ul>
               <p className='copy-right'>Copyright ©︎keikyan. All rights reserved</p>
             </div>

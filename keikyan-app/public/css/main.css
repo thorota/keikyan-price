@@ -357,7 +357,7 @@ header .pc-header .header__item {
 }
 
 header .pc-header .header__item a:hover {
-  text-decoration: none;
+  text-decoration: underline !important;
   color: #222;
 }
 

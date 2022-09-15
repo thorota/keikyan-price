@@ -23,7 +23,7 @@ header{
       &__item{
         text-align: center;
         a:hover {
-          text-decoration: none;
+          text-decoration: underline!important;
           color: #222;
         }
         span,p {
