@@ -13,11 +13,15 @@ header .pc-header {
   background-color: white;
   z-index: 99999;
   width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 header .pc-header .header__list {
   width: calc(100% - 170px - 14vw);
-  padding: 0 30px;
+  padding: 0 200px 0 0;
+  max-width: 1250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,12 +37,17 @@ header .pc-header .header__item {
   text-align: center;
 }
 
+header .pc-header .header__item a:hover {
+  text-decoration: none;
+  color: #222;
+}
+
 header .pc-header .header__item span, header .pc-header .header__item p {
-  font-size: 1.4vw;
+  font-size: 15px;
 }
 
 header .pc-header .header__line {
-  width: 170px;
+  min-width: 170px;
 }
 
 header .pc-header .header__reserve {
@@ -57,12 +66,19 @@ header .pc-header .header__reserve {
   -ms-flex-pack: center;
   justify-content: center;
   width: 14vw;
+  max-width: 190px;
   height: 100px;
   right: 0;
   background-color: #225441;
   border-bottom-left-radius: 20px;
   padding: 2vw 3vw;
   color: white;
+}
+
+header .pc-header .header__reserve .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 5px;
 }
 
 header .sp-header .header__logo {
@@ -231,7 +247,7 @@ header .sp-header .menu-content .copy-right {
 }
 
 .small {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .l-title {

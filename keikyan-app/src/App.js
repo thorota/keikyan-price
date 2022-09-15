@@ -237,30 +237,32 @@ const App = () => {
           </div>
           <div className="header__list">
             <div className="header__item">
-              <span className="text-sm">キャンピングカー</span>
+              <a><span className="text-sm">キャンピングカー</span></a>
             </div>
             <div className="header__item">
-              <span>料金</span>
+              <a><span>料金</span></a>
             </div>
             <div className="header__item">
-              <span>ご利用案内</span>
+              <a><span>ご利用案内</span></a>
             </div>
             <div className="header__item">
-              <span>お知らせ</span>
+              <a><span>お知らせ</span></a>
             </div>
             <div className="header__item">
-              <span className="text-sm">料金シミュレーション</span>
+              <a><span className="text-sm">料金シミュレーション</span></a>
             </div>
             <div className="header__item">
-              <span>軽キャンおすすめ</span>
+              <a><span>軽キャンおすすめ</span></a>
             </div>
             <div className="header__item header__line">
-              <img src="/img/line.png" />
+              <a><img src="/img/line.png" /></a>
             </div>
           </div>
           <div className="header__item header__reserve">
-            <p>RESERVE</p>
+            <a>
+            <p className='title'>RESERVE</p>
             <p className="small">予約する</p>
+            </a>
           </div>
         </div>
       </header>
@@ -269,7 +271,7 @@ const App = () => {
           <div className="header__logo">
             <img src="/img/logo-sp.png" />
           </div>
-          <div class="header__menu">
+          <div className="header__menu">
             <input type="checkbox" id="menu-btn-check" />
             <label htmlFor="menu-btn-check" className="menu-btn">
               <span></span>

@@ -10,25 +10,31 @@ header{
     background-color: white;
     z-index: 99999;
     width: 100%;
+    justify-content: space-between;
     .header{
       &__list{
         width: calc(100% - 170px - 14vw);
-        padding: 0 30px;
+        padding: 0 200px 0 0;
+        max-width: 1250px;
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
       &__item{
         text-align: center;
+        a:hover {
+          text-decoration: none;
+          color: #222;
+        }
         span,p {
-          font-size: 1.4vw
+          font-size: 15px;
         }
       }
       &__logo{
         // width: 170px;
       }
       &__line{
-        width: 170px
+        min-width: 170px
       }
       &__reserve{
         position: absolute;
@@ -37,13 +43,18 @@ header{
         align-items: center;
         justify-content: center;
         width: 14vw;
+        max-width: 190px;
         height: 100px;
         right: 0;
         background-color: rgba(34, 84, 65, 1);
         border-bottom-left-radius: 20px;
         padding: 2vw 3vw;
         color: white;
-        
+        .title{
+          font-size: 20px;
+          font-weight: bold;
+          padding-bottom: 5px;
+        }
       }
     }
   }
@@ -209,7 +220,7 @@ header{
 }
 
 .small {
-  font-size: 12px;
+  font-size: 12px!important;
 }
 
 .l-title {
