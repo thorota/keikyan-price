@@ -261,7 +261,7 @@ const App = () => {
             </div>
           </div>
           <div className="header__item header__reserve">
-            <a href='https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/' target="_blank">
+            <a href='https://keyaki-works.rsvsys.jp/' target="_blank">
             <p className='title'>RESERVE</p>
             <p className="small">予約する</p>
             </a>
@@ -292,7 +292,7 @@ const App = () => {
                   <li><a href="https://keyaki-keikyan.com/contact">お問い合わせ</a></li>
                   <li className='sp-sns'><a href="https://instagram.com/keyaki.works?igshid=YmMyMTA2M2Y=" target="_blank"><img src='/img/instagram-sp.png'/></a></li>
                   <li className=''><a href="https://page.line.me/378kjmwj" target="_blank"><img src='/img/line-sp.png'/></a></li>
-                  <li className=''><a href="https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/" target="_blank"><img src='/img/reserv-sp.png'/></a></li>
+                  <li className=''><a href="https://keyaki-works.rsvsys.jp/" target="_blank"><img src='/img/reserv-sp.png'/></a></li>
               </ul>
               <p className='copy-right'>Copyright ©︎keikyan. All rights reserved</p>
             </div>
@@ -303,7 +303,7 @@ const App = () => {
         <img className="bg-wave" src="/img/bg-wave.png" />
       </section>
       <section className="sp-menu only-sp">
-        <a href="https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/">
+        <a href="https://keyaki-works.rsvsys.jp/">
           <p className="title">RESERVE</p>
           <p className="small">予約する</p>
         </a>
@@ -559,7 +559,7 @@ const App = () => {
               </div>
               {/* <div className="p-price__calc-reserv">
                 <a
-                  href="https://rsvsys-1615.rsvsys.demo.iqnet.co.jp/"
+                  href="https://keyaki-works.rsvsys.jp/"
                   target="blank"
                 >
                   この内容で予約する
