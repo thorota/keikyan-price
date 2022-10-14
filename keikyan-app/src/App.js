@@ -104,7 +104,7 @@ const App = () => {
     } else {
       clearCheck();
     }
-    console.log(checked);
+    // console.log(checked);
   };
 
   const toggleChecked = (target) => {
@@ -113,12 +113,13 @@ const App = () => {
     } else {
       setChecked([...checked.concat([target])]);
     }
-    console.log(checked);
+    // console.log(checked);
   };
 
   const handleChange = (dates) => {
     const [start, end] = dates;
-    console.log((end - start) / 86400000);
+    // console.log("dates",dates);
+    // console.log(Math.ceil(calcDiffDate(start, end)));
     setStartDate(start);
     setEndDate(end);
   };
@@ -136,7 +137,7 @@ const App = () => {
    * @returns
    */
   const calcDiffDate = (start, end) => {
-    return (endDate - startDate) / 86400000;
+    return (end - start) / 86400000;
   };
 
   const calcDiffMonth = (start, end) => {
@@ -152,10 +153,10 @@ const App = () => {
    * 料金計算
    */
   const calcPrice = () => {
-    let diffDate = calcDiffDate(startDate, endDate);
+    let diffDate = Math.ceil(calcDiffDate(startDate, endDate) + 1);
     let diffMonth = calcDiffMonth(startDate, endDate);
-
-    console.log(checked);
+    // console.log(diffDate);
+    // console.log(checked);
     // console.log(customOptions[]);
 
     // オプション
@@ -180,7 +181,7 @@ const App = () => {
 
     // 保険
     const resInsurance = checkedInsurance.price * diffDate;
-    console.log(resInsurance);
+    // console.log(resInsurance);
     setInsurancePrice(resInsurance);
 
     // 基本料金
@@ -196,8 +197,8 @@ const App = () => {
     }
 
     for (let i = 1; i <= diffDate; i++) {
-      console.log('曜日', startDate.getDay());
-      console.log(startDate, JapaneseHolidays.isHoliday(startDate));
+      // console.log('曜日', startDate.getDay());
+      // console.log(startDate, JapaneseHolidays.isHoliday(startDate));
       if (
         JapaneseHolidays.isHoliday(startDate) ||
         startDate.getDay() == 0 ||
@@ -219,6 +220,10 @@ const App = () => {
     const subtotal = resBasic + resOption + resInsurance;
     setSubtotal(subtotal);
     setTotal(subtotal * 1.1);
+    
+    // clean up
+    setStartDate(new Date());
+    setEndDate(null);
   };
 
   useEffect(() => {
