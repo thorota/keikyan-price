@@ -74,7 +74,7 @@ const App = () => {
   registerLocale('ja', ja);
 
   const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(null);
+  const [endDate, setEndDate] = useState(new Date());
 
   const today = new Date();
 
@@ -181,6 +181,7 @@ const App = () => {
 
     // 保険
     const resInsurance = checkedInsurance.price * diffDate;
+    // console.log("diffDate", diffDate);
     // console.log(resInsurance);
     setInsurancePrice(resInsurance);
 
@@ -527,7 +528,6 @@ const App = () => {
               <div className="p-price__calc text-center">
                 <button
                   type="button"
-                  disabled={endDate ? false : true}
                   onClick={calcPrice}
                 >
                   計算する
